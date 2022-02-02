@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  {% block header %}
+    <meta charset="UTF-8" />
+    <img src="/static/images/logo.png" height="100px" width="200px" />
+    <h1 width="60%" align=left><font color="#ff3385" >Future Vision Transport - Image Segmentation</font></h1>
+    <br>
+    <hr width="60%" color="#ff3385" align=left>
+   {% endblock %}
+  </head>
+  <body>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+                <li>{{ messages[-1] }}</li>
+            </ul>
+        {% endif %}
+        {% endwith %}
+        {% if not result %}
+            {% block corps %}{% endblock %}  
+        {% else %}
+            {% block result %}{% endblock %} 
+        {% endif %}
+        {% block footer %}{% endblock %}
+  </body>
+</html>
+ 
+

@@ -1,0 +1,13 @@
+six==1.15.0
+numpy==1.19.2
+azure-core
+Flask
+Jinja2
+Pillow
+tensorflow
+Keras
+Keras-Applications
+Keras-Preprocessing
+colormap
+easydev
+pandas

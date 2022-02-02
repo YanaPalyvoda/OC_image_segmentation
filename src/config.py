@@ -1,0 +1,9 @@
+EPOCHS = 20
+IMAGE_SIZE = 128
+BATCH_SIZE = 4
+NUM_CLASSES=8
+DATASTORE = 'workspacefilestore'
+DATA_DIR = '../data'
+MODEL_PATH = '../outputs/UNet_model_Final'
+PRETRAINED_MODEL_DIR = 'outputs'
+RESULT_PATH = '../result'
